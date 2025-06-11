@@ -1,11 +1,15 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
-// Replace 'your-repo-name' with the actual GitHub repo name
+// https://vitejs.dev/config/
 export default defineConfig({
-  base: '/Portfolio/',  // 👈 Important for GitHub Pages
+  // The base path should be the name of your GitHub repository.
+  base: '/Portfolio/', 
+  
+  // This tells Vite to build the project into the 'docs' folder.
+  build: {
+    outDir: 'docs'
+  },
+
   plugins: [vue()],
-  server: {
-    port: 3000
-  }
 })
