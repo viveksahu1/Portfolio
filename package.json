@@ -1,12 +1,11 @@
 {
   "name": "portfolio-vivek",
   "version": "1.0.0",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview",
-    "deploy": "gh-pages -d dist"
-  },
+"scripts": {
+  "dev": "vite",
+  "build": "npx vite build",
+  "serve": "vite preview"
+}, 
   "dependencies": {
     "@motionone/vue": "^10.16.4",
     "@oku-ui/motion": "^0.4.3",
