@@ -1,1 +1,0 @@
-<template><div class='p-6'>Contact Page</div></template>

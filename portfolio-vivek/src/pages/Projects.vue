@@ -1,1 +1,0 @@
-<template><div class='p-6'>Projects Page</div></template>
