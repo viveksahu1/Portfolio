@@ -4,6 +4,6 @@ import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  // Add this line
-  base: '/Portfolio/',
+  // Add this line to fix the paths for GitHub Pages
+  base: '/Portfolio/', 
 })
