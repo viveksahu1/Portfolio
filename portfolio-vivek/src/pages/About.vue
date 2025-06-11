@@ -1,0 +1,1 @@
+<template><div class='p-6'>About Page</div></template>
