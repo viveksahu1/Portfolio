@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'; // Changed here
+import { createRouter, createWebHistory } from 'vue-router'; // Changed here
 import SinglePage from '../pages/SinglePage.vue';
 
 const routes = [
@@ -6,8 +6,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  // Switched to createWebHashHistory for GitHub Pages compatibility
-  history: createWebHashHistory(), 
+  history: createWebHistory('/Portfolio/'),
   routes,
 });
 
