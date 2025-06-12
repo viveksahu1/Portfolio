@@ -8,7 +8,7 @@
           :initial="{ opacity: 0, scale: 0.8 }" 
           :visible-once="{ opacity: 1, scale: 1, transition: { type: 'spring', stiffness: 100, delay: 400 } }"
         >
-          <img src="https://placehold.co/400x400/1f2937/7c3aed?text=VS" alt="Vivek Sahu" class="rounded-full w-48 h-48 md:w-64 md:h-64 object-cover shadow-2xl shadow-purple-900/40">
+          <img src="https://placehold.co/400x400/1f2937/7c3aed?text=VS" alt="Vivek Sahu" class="rounded-full w-full max-w-48 h-auto md:w-64 md:h-64 object-cover shadow-2xl shadow-purple-900/40">
         </div>
         <div class="md:col-span-2" v-motion-slide-left-visible-once>
           <h3 class="text-3xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-indigo-400 bg-clip-text text-transparent">Hello! I'm Vivek.</h3>
