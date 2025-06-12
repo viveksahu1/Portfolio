@@ -28,7 +28,7 @@
           :key="link.to"
           :href="link.to"
           @click.prevent="scrollToSection(link.to, link.text, true)"
-          class="text-3xl text-gray-200 hover:text-white"
+          class="text-2xl text-gray-200 hover:text-white"
         >
           {{ link.text }}
         </a>

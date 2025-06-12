@@ -1,7 +1,7 @@
 <template>
   <section id="projects" class="py-24 md:py-32">
     <div class='container mx-auto px-6'>
-      <h2 class="text-4xl md:text-6xl font-black text-center mb-16 uppercase tracking-tighter" v-motion-fade-visible-once>Projects</h2>
+      <h2 class="text-4xl md:text-6xl font-black text-center mb-12 md:mb-16 uppercase tracking-tighter" v-motion-fade-visible-once>Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <a 
           href="#" 

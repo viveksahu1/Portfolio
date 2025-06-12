@@ -1,7 +1,7 @@
 <template>
   <section id="experience" class="py-24 md:py-32 bg-gray-900/20">
     <div class='container mx-auto px-6'>
-      <h2 class="text-4xl md:text-6xl font-black text-center mb-16 uppercase tracking-tighter" v-motion-fade-visible-once>Experience</h2>
+      <h2 class="text-4xl md:text-6xl font-black text-center mb-12 md:mb-16 uppercase tracking-tighter" v-motion-fade-visible-once>Experience</h2>
       <div class="max-w-4xl mx-auto space-y-8">
         <div v-for="(job, index) in experiences" :key="job.title" v-motion :initial="{ opacity: 0.5, y: 50 }" :visible="{ opacity: 1, y: 0, transition: { duration: 500, delay: 100 + index * 150 } }" class="p-8 border border-gray-800 rounded-2xl bg-gray-900/50 card-interactive">
           <div class="flex flex-col md:flex-row justify-between md:items-start gap-4">
