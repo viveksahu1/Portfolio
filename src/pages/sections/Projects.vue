@@ -3,7 +3,15 @@
     <div class='container mx-auto px-6'>
       <h2 class="text-4xl md:text-6xl font-black text-center mb-16 uppercase tracking-tighter" v-motion-fade-visible-once>Projects</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <a href="#" v-for="(project, index) in projects" :key="project.title" v-motion :initial="{ opacity: 0.5, y: 50 }" :visible="{ opacity: 1, y: 0, transition: { duration: 500, delay: 100 + index * 100 } }" class="p-8 border border-gray-800 rounded-2xl bg-gray-900/50 flex flex-col card-interactive group">
+        <a 
+          href="#" 
+          v-for="(project, index) in projects" 
+          :key="project.title" 
+          v-motion 
+          :initial="{ opacity: 0.5, y: 50 }" 
+          :visible="{ opacity: 1, y: 0, transition: { duration: 500, delay: 100 + index * 100 } }" 
+          class="p-8 border border-gray-800 rounded-2xl bg-gray-900/50 flex flex-col card-interactive group card-glow"
+        >   
           <h3 class="text-2xl font-bold mb-3 group-hover:text-indigo-400 transition-colors">{{ project.title }}</h3>
           <p class="text-gray-400 flex-grow">{{ project.description }}</p>
           <div class="mt-6"><span v-for="tech in project.tech" :key="tech" class="bg-gray-800 text-gray-300 text-xs font-medium me-2 px-3 py-1 rounded-full">{{ tech }}</span></div>

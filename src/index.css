@@ -21,12 +21,44 @@ a, button, .card-interactive {
 
 @layer components {
   .btn {
-    @apply py-3 px-8 rounded-full font-bold shadow-lg transform hover:-translate-y-1.5 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-opacity-75;
+    @apply py-2 px-6 md:py-3 md:px-8 rounded-full font-bold shadow-lg transform hover:-translate-y-1.5 transition-all duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-opacity-75;
   }
   .btn-primary {
     @apply bg-white text-black hover:bg-gray-200 hover:shadow-xl;
   }
   .card-interactive {
     @apply transition-all duration-300 ease-in-out hover:!opacity-100 hover:border-gray-700 hover:scale-[1.02] hover:shadow-2xl hover:shadow-black/50;
+  }
+}
+
+@layer components {
+  .card-glow {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-glow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 1rem; /* Matches your rounded-2xl */
+    padding: 2px; /* Border thickness */
+    width: 100%;
+    background: linear-gradient(90deg, #a855f7, #818cf8); /* purple-500 to indigo-400 */
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+          mask-composite: exclude;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .card-glow:hover::before {
+    opacity: 1;
   }
 }
