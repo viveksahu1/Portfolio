@@ -34,7 +34,7 @@
           </a>
           
           <a 
-            href="https://www.linkedin.com/in/vivek-sahu-7070b8231/https://www.linkedin.com/in/vivek-sahu-7070b8231/" 
+            href="https://www.linkedin.com/in/vivek-sahu-7070b8231/" 
             target="_blank" 
             class="flex items-center justify-center gap-3 p-4 rounded-lg bg-gray-800/50 card-interactive card-glow text-lg"
           >
